@@ -41,6 +41,8 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->register(Irazasyed\LaravelGAMP\LaravelGAMPServiceProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

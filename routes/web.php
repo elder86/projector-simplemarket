@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/send_gump_event', [\App\Http\Controllers\GumpController::class, 'sendEvent']);
